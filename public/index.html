@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="app.js"></script>
+  </head>
+  <body class="bg-[#222]">
+    <div
+      class="card w-[90%] max-w-[470px] bg-gradient-to-r from-teal-400 to-blue-500 text-[#fff] mt-[100px] mb-0 py-[40px] px-[35px] rounded-[20px] text-center mx-auto"
+    >
+      <div class="search w-[100%] flex items-center justify-between">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+          class="border-[0] outline-[0] bg-[#ebfffc] text-[#555] py-[10px] px-[25px] h-[60px] rounded-full flex-1 mr-[16px] text-[18px] search-input"
+        />
+        <button
+          class="border-[0] outline-[0] bg-[#ebfffc] rounded-full w-[60px] h-[60px] cursor-pointer flex justify-center items-center button"
+        >
+          <img class="w-[30px]" src="images/search.png" alt="search button" />
+        </button>
+      </div>
+      <div
+        class="error ml-[10px] mt-[10px] text-[24px] text-left hidden font-bold"
+      >
+        <p class="error-text">Invalid city name</p>
+      </div>
+
+      <div class="weather hidden">
+        <img
+          class="weather-icon w-[170px] mt-[30px] mx-auto"
+          src="images/rain.png"
+          alt="It is rainy"
+        />
+        <h1 class="temp text-[80px] font-medium">22°C</h1>
+        <h2 class="city text-[45px] font-[400] mt-[-10px]">Herat</h2>
+
+        <div class="details flex justify-between items-center py-0 mt-[50px]">
+          <div class="col flex items-center text-left">
+            <img class="w-[40px] mr-[10px]" src="images/humidity.png" />
+            <div>
+              <p class="humidity text-[28px] mt-[-6px]">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col flex items-center text-left">
+            <img class="w-[40px] mr-[10px]" src="images/wind.png" />
+            <div>
+              <p class="wind text-[25px] mt-[-6px]">15 km/h</p>
+              <p>wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
